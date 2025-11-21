@@ -22,7 +22,7 @@ wire [TOTAL_PUFs-1:0] OUT;
 
 always @(posedge clk or posedge reset) begin
     if (reset) OUT_reg <= 0;
-    else OUT_reg = OUT[addr * OUT_BITS +: OUT_BITS];
+    else OUT_reg <= OUT[addr * OUT_BITS +: OUT_BITS];
 end
 
 genvar i;
