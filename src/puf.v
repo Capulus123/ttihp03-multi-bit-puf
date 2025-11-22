@@ -40,8 +40,10 @@ module one_bit_puf(
      input wire reset,    // Reset signal
      output wire OUT
  );
- (* KEEP = "TRUE" *) wire Q0;
- (* KEEP = "TRUE" *) wire Q1;          // Outputs from the D-Latches
+ //(* KEEP = "TRUE" *) 
+wire Q0;
+ //(* KEEP = "TRUE" *) 
+wire Q1;          // Outputs from the D-Latches
  wire P0;         // Delays through inverters
  wire P1;         // Delays through inverters
  
